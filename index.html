@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Time</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="box"id="#top">
+            <div class="clock">
+                <div class="time hours">00</div>
+                <div class="time hoursAmPm" style="display: none;">00</div>
+                <div class="titik">:</div>
+                <div class="time minute">00</div>
+                <div class="box2">
+                    <div class="pmam" style="opacity:0;">AA</div>
+                    <div class="second" >00</div>
+                </div>
+            </div>
+            <div class="smallBox">
+                <div class="day">Hari, 00 00 0000</div>
+            </div>
+        </div>
+    </div>
+    <div class="setting">
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label"></label>
+            <span class="toggle-text">AM/PM</span>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggleSecond" class="toggle-input" checked>
+            <label for="toggleSecond" class="toggle-label"></label>
+            <span class="toggle-text">LIHAT DETIK</span>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggleDay" class="toggle-input" checked>
+            <label for="toggleDay" class="toggle-label"></label>
+            <span class="toggle-text">LIHAT HARI </span>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggleNight" class="toggle-input" checked>
+            <label for="toggleNight" class="toggle-label"></label>
+            <span class="toggle-text">NIGHT MODE</span>
+        </div>
+        <button onclick="toggleFullscreen()" class="fullscreen"><a href="#top">FULLSCREEN</a></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

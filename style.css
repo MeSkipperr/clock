@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik+Mono+One&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background: #111111;
+  color: #ffffff;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+html{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar{
+    width: 0px;
+}
+/* div{
+    color: white;
+} */
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 95%;
+  height: auto;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 50px;
+}
+
+.clock{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vw;
+  font-family: 'Squada One', cursive;
+}
+
+.clock .time {
+  width: 30%;
+}
+
+.box2{
+  width: 10%;
+  font-size: 8vw;
+}
+
+.box2 .pmam{
+  font-size: 4vw;
+}
+
+.smallBox{
+  width: 60%;
+  height: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.smallBox div {
+  width: 70%;
+  position: relative;
+  left: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  left: 35%;
+}
+
+.setting{
+  border-top: 5px solid #111111;
+    width: 100%;
+    /* border: 1px solid #fff; */
+    background: #fff;
+    height: 300px;
+}
+/* style untuk container toggle */
+.toggle-container {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 34px;
+  margin: 10px;
+  background: #fff;
+  vertical-align: middle;
+  }
+  
+  /* style untuk label toggle */
+  .toggle-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 34px;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  /* style untuk input toggle */
+  .toggle-input {
+    display: none;
+  }
+  
+  /* style untuk input toggle yang di-check */
+  .toggle-input:checked + .toggle-label {
+    background-color: #2196f3;
+  }
+  
+  /* style untuk toggle button */
+  .toggle-label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* style untuk toggle button ketika di-check */
+  .toggle-input:checked + .toggle-label::after {
+    transform: translateX(26px);
+  }
+  
+  /* style untuk teks toggle */
+  .toggle-text {
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+  }
+  
+  #toggle:checked + .pmam::after{
+    opacity: 0%;
+  }
+
+  .fullscreen{
+    width: 100px;
+    height: 30px;
+    background-color: #111111;
+    border-radius: 10px;
+  }
+  .fullscreen a{
+    background-color: #111111;
+    color: #fff;
+    text-decoration: none;
+  }
